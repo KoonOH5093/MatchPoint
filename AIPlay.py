@@ -33,7 +33,7 @@ def AIcontrol(step, game, countP, countL):
         result = game.paint(nextStep.x,nextStep.y)
         print(f'paint at {nextStep.probs}\tresult: {result}')
         game.render()
-        time.sleep(0.5)
+        time.sleep(0.1)
         if nextStep.x == 0:
             countP = 0
             countL = 0
